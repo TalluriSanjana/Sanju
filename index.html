@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Little Surprise 💌</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e8, #fff5f8);
+        }
+
+        .card {
+            background: white;
+            padding: 45px 30px;
+            border-radius: 30px;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .heart {
+            font-size: 55px;
+            animation: beat 1s infinite;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 32px;
+        }
+
+        p {
+            color: #6b2148;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        button {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 15px 28px;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes beat {
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="heart">💗</div>
+
+        <h1>I Made Something Special For You</h1>
+
+        <p>
+            There is a little surprise waiting inside... ✨
+        </p>
+
+        <p>
+            Ready to see our beautiful journey? 💌
+        </p>
+
+        <a href="story.html">
+            <button>Open Your Surprise 💖</button>
+        </a>
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+            "Happy 6th Anniversary! ❤️✨";
+        }
+    </script>
+</body>
+</html>
